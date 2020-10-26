@@ -16,6 +16,10 @@ public class ArrayOps{
     return big;
   }
   public static int[] sumRows(int[][] matrix){
+    int[] b = new int[0];
+    if (matrix.length == 1 && matrix[0].length==0){
+      return b;
+    }
     int[] a = new int[matrix.length];
     for (int i = 0; i<matrix.length; i++){
       a[i] += sum(matrix[i]);
@@ -36,6 +40,18 @@ public class ArrayOps{
     }
     return a;
   }
-
+  public static int[] sumCols(int[][] matrix){
+    int[] b = new int[0];
+    if (matrix.length <= 0){
+      return b;
+    }
+    int[] a = new int[matrix[0].length];
+    for (int i = 0; i<matrix.length; i++){
+      for (int j = 0; j< matrix[i].length; j++){
+        a[j] += matrix[i][j];
+      }
+    }
+    return a;
+  }
 
 }
