@@ -10,9 +10,9 @@ public class Tester{
                            };
     int[][] e = {{}};
     int[][] g= {
-                            {4, 1},
-                            {5, 9},
-                            {-4, -5},
+                            {4, 1, 7},
+                            {5, 9, 7},
+                            {-4, -5, 7},
     };
     int[] a = {1, 2, 3, 4, 5};
     int[][] b = {
@@ -32,6 +32,7 @@ public class Tester{
     System.out.println(ArrayOps.isRowMagic(b));
     System.out.println(ArrayOps.isRowMagic(f));
     System.out.println(ArrayOps.isColMagic(g));
+    System.out.println(ArrayOps.isLocationMagic(g, 1, 2));
 
   }
 }
