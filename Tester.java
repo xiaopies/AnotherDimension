@@ -9,6 +9,11 @@ public class Tester{
                             {-1, 7},
                            };
     int[][] e = {{}};
+    int[][] g= {
+                            {4, 1},
+                            {5, 9},
+                            {-4, -5},
+    };
     int[] a = {1, 2, 3, 4, 5};
     int[][] b = {
                             {1, 2},
@@ -26,6 +31,7 @@ public class Tester{
     System.out.println(Arrays.toString(ArrayOps.sumCols(d)));
     System.out.println(ArrayOps.isRowMagic(b));
     System.out.println(ArrayOps.isRowMagic(f));
+    System.out.println(ArrayOps.isColMagic(g));
 
   }
 }
